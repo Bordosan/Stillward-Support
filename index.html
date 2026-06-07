@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stillward — Support</title>
+<meta name="description" content="Get help with Stillward: subscriptions, voices, audio, account, and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#160F0C; --panel:#241A14; --cream:#F4E9E0; --muted:#B6A498; --faint:#7E6F64;
+  --gold:#DBB57F; --gold-soft:#C49B66; --line:rgba(244,233,224,.10); --line2:rgba(244,233,224,.06);
+  --display:'Fraunces',Georgia,serif; --body:'Hanken Grotesk',-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg); color:var(--cream); font-family:var(--body); line-height:1.65; -webkit-font-smoothing:antialiased}
+body::before{content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.5;
+  background:radial-gradient(60% 45% at 80% 0%, rgba(219,181,127,.10), transparent 70%), radial-gradient(50% 40% at 10% 60%, rgba(217,138,146,.06), transparent 70%);}
+.wrap{position:relative; z-index:1; max-width:780px; margin:0 auto; padding:0 28px}
+a{color:var(--gold); text-decoration:none}
+a:hover{color:var(--cream)}
+
+nav{display:flex; align-items:center; justify-content:space-between; padding:30px 0}
+.brand{font-family:var(--display); font-size:22px; font-weight:600; display:flex; align-items:center; gap:11px; color:var(--cream)}
+.mark{width:29px;height:29px;border-radius:9px;background:linear-gradient(150deg,var(--gold),var(--gold-soft));display:grid;place-items:center;color:#1a120d;font-weight:700;font-family:var(--display);font-size:16px}
+.nav-links a{color:var(--muted); font-size:15px; margin-left:26px}
+
+header.h{padding:56px 0 40px}
+.eyebrow{font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin-bottom:18px}
+h1{font-family:var(--display); font-weight:500; font-size:clamp(38px,6vw,58px); line-height:1.04; letter-spacing:-.015em}
+.sub{margin-top:20px; color:var(--muted); font-size:19px; max-width:52ch}
+
+.contact{margin:36px 0 10px; background:linear-gradient(160deg,var(--panel),rgba(30,22,17,.4)); border:1px solid var(--line); border-radius:20px; padding:30px 32px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap}
+.contact .lbl{font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:6px}
+.contact .em{font-family:var(--display); font-size:24px; font-weight:600; color:var(--cream)}
+.contact .note{color:var(--muted); font-size:14.5px; margin-top:6px}
+.mailbtn{background:var(--cream); color:#1a120d; padding:14px 26px; border-radius:13px; font-weight:600; font-size:15.5px; transition:transform .3s}
+.mailbtn:hover{transform:translateY(-2px); color:#1a120d}
+
+section{padding:46px 0 10px}
+h2{font-family:var(--display); font-weight:500; font-size:30px; margin-bottom:8px; letter-spacing:-.01em}
+.lead{color:var(--muted); margin-bottom:26px}
+
+details{border-bottom:1px solid var(--line2); padding:8px 0}
+details summary{list-style:none; cursor:pointer; padding:18px 0; font-size:18px; font-weight:500; display:flex; justify-content:space-between; align-items:center; gap:16px}
+details summary::-webkit-details-marker{display:none}
+details summary .pl{color:var(--gold); font-size:24px; line-height:1; transition:transform .35s; flex-shrink:0}
+details[open] summary .pl{transform:rotate(45deg)}
+details .ans{padding:0 0 22px; color:var(--muted); font-size:16px; max-width:64ch}
+details .ans a{font-weight:500}
+
+footer{border-top:1px solid var(--line); padding:46px 0 70px; margin-top:50px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap}
+.copy{color:var(--faint); font-size:13.5px}
+.foot-links a{color:var(--muted); font-size:15px; margin-left:24px}
+.foot-links a:first-child{margin-left:0}
+@media(max-width:560px){.foot-links a{margin-left:0; margin-right:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a href="https://bordosan.github.io/Stillward/"><div class="brand"><span class="mark">S</span> Stillward</div></a>
+    <div class="nav-links"><a href="https://bordosan.github.io/Stillward/">Home</a><a href="https://bordosan.github.io/Stillward-Privacy-Policy-/">Privacy</a></div>
+  </nav>
+
+  <header class="h">
+    <div class="eyebrow">Support</div>
+    <h1>How can we help?</h1>
+    <p class="sub">Answers to common questions below. If you don't find what you need, reach us directly — we read every message.</p>
+
+    <div class="contact">
+      <div>
+        <div class="lbl">Email us</div>
+        <div class="em">stillwardhelp@gmail.com</div>
+        <div class="note">We typically reply within 1–2 business days.</div>
+      </div>
+      <a class="mailbtn" href="mailto:stillwardhelp@gmail.com?subject=Stillward%20Support">Send a message</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Subscriptions &amp; billing</h2>
+    <p class="lead">Stillward Premium unlocks unlimited sessions and every voice.</p>
+
+    <details><summary>How do I start a subscription? <span class="pl">+</span></summary>
+      <div class="ans">Open Stillward, tap to unlock Premium, and choose a monthly or annual plan. Payment is handled securely through your Apple ID — Stillward never sees your card details.</div></details>
+
+    <details><summary>How do I restore a purchase on a new device? <span class="pl">+</span></summary>
+      <div class="ans">Sign in with the same Apple ID you used to subscribe and choose "Restore Purchases" on the Premium screen. Your subscription will reactivate automatically.</div></details>
+
+    <details><summary>How do I cancel or manage my subscription? <span class="pl">+</span></summary>
+      <div class="ans">Subscriptions are managed by Apple, not within Stillward. On your iPhone or iPad, open <strong>Settings → [your name] → Subscriptions</strong>, select Stillward, and tap Cancel. You'll keep access until the end of the current billing period.</div></details>
+
+    <details><summary>Will I be charged after a free trial? <span class="pl">+</span></summary>
+      <div class="ans">If your plan includes a free trial, it converts to a paid subscription when the trial ends unless you cancel at least 24 hours before. You can cancel any time during the trial and keep access until it ends.</div></details>
+
+    <details><summary>How do I request a refund? <span class="pl">+</span></summary>
+      <div class="ans">Refunds for App Store purchases are handled by Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in, and request a refund for Stillward. If you ran into a problem on our end, email us first and we'll help.</div></details>
+  </section>
+
+  <section>
+    <h2>Voices &amp; sessions</h2>
+    <p class="lead">Shaping a session the way you like it.</p>
+
+    <details><summary>How do I change the meditation voice? <span class="pl">+</span></summary>
+      <div class="ans">Go to <strong>Profile</strong> and choose a default voice — Saavi, Charlotte, George, or Charlie. You can change it any time, and it applies to future sessions.</div></details>
+
+    <details><summary>Can I adjust session length and guidance? <span class="pl">+</span></summary>
+      <div class="ans">Yes. Before you begin, set a duration (from 5 to 45 minutes) and use the Instruction slider to move between minimal guidance and fully spoken guidance. You can also set defaults in Profile.</div></details>
+
+    <details><summary>The audio won't play or cuts out. <span class="pl">+</span></summary>
+      <div class="ans">First, check that your device isn't on silent and the volume is up. If audio still won't play, make sure you have a working internet connection (sessions are generated with voice audio), then fully close and reopen the app. If it persists, email us with your device model and iOS version.</div></details>
+
+    <details><summary>What is the sound bath? <span class="pl">+</span></summary>
+      <div class="ans">An optional set of resonant tones — bells, singing bowls, and grounding frequencies — that can play at the end of a session. Enable it and pick your tones under <strong>Profile → Sound Bath After Session</strong>.</div></details>
+  </section>
+
+  <section>
+    <h2>Account &amp; privacy</h2>
+    <details><summary>How is my data handled? <span class="pl">+</span></summary>
+      <div class="ans">We keep data collection to what's needed to run the app. Full details are in our <a href="https://bordosan.github.io/Stillward-Privacy-Policy-/">Privacy Policy</a>.</div></details>
+
+    <details><summary>How do I delete my account or data? <span class="pl">+</span></summary>
+      <div class="ans">Email us at <a href="mailto:stillwardhelp@gmail.com">stillwardhelp@gmail.com</a> from the address tied to your account and we'll process the deletion.</div></details>
+  </section>
+
+  <footer>
+    <div class="copy">© <span id="yr"></span> Bordosan LLC · Stillward</div>
+    <div class="foot-links">
+      <a href="https://bordosan.github.io/Stillward/">Home</a>
+      <a href="https://bordosan.github.io/Stillward-Privacy-Policy-/">Privacy Policy</a>
+      <a href="mailto:stillwardhelp@gmail.com">Email</a>
+    </div>
+  </footer>
+
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
